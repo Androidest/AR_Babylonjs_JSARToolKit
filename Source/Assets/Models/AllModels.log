@@ -1,0 +1,81 @@
+Exporter version: 6.0-beta 9, Blender version: 2.80 (sub 54)
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		inline textures     :  false
+		Material Type       :  STD
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		texture directory   :  D:\Workspace\AR\Source\Assets\Models\
+	Python World class constructor completed
+	processing begun of mesh:  ARWorld
+		processing begun of material:  AllModels.Bark.001
+		num positions      :  4
+		num normals        :  4
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  6
+	processing begun of mesh:  Temple
+		processing begun of material:  AllModels.Temple
+			processing texture temple
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals being used
+		num positions      :  36683
+		num normals        :  36683
+		num uvs            :  73366
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  89106
+	processing begun of mesh:  Ancient Building
+		processing begun of material:  AllModels.Palette
+			processing texture palette
+				texture type:  diffuseTexture, mapped using: "UVChannel_1"
+		Custom split normals being used
+		num positions      :  4114
+		num normals        :  4114
+		num uvs            :  8228
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  5292
+	processing begun of mesh:  Car
+		processing begun of material:  AllModels.Palette
+		registered as also a user of material:  AllModels.Palette
+		Custom split normals being used
+		num positions      :  1677
+		num normals        :  1677
+		num uvs            :  3354
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  2244
+	processing begun of mesh:  House
+		processing begun of material:  AllModels.houses
+			processing texture houses
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals being used
+		num positions      :  9511
+		num normals        :  9511
+		num uvs            :  19022
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  12354
+	processing begun of mesh:  Tree
+		processing begun of material:  AllModels.Tree
+		processing begun of material:  AllModels.Bark
+		processing begun of multimaterial:  AllModels.Multimaterial#0
+		Custom split normals being used
+		num positions      :  505
+		num normals        :  505
+		num uvs            :  1010
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  1500
+	processing begun of camera (UniversalCamera):  Camera
+	processing begun of light (DIRECTIONAL):  Sun
+	processing begun of light (POINT):  Point
+========= Writing of JSON file started =========
+========= Writing of JSON file completed =========
+========= end of processing =========
+elapsed time:  0 min, 2.0071 secs

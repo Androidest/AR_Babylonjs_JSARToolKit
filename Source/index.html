@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Shared -->
+    <script> var FBInstant; </script>
+    <!-- FB_START --><!-- FB_END -->
+
+    <!-- STEPHEN_START -->
+        <script src="Lib/artoolkit.debug.js"></script>
+        <script src="Lib/artoolkit.api.js"></script>
+        <script src="Lib/FBInterface.js"></script>
+        <script src='Lib/pep.js'></script>
+        <script src="Lib/cannon.min.js"></script>
+        <script src="Lib/babylon.js"></script>
+        <script src="Lib/babylon.gui.min.js"></script>
+        <script src="Lib/GameTime.js"></script>
+        <script src="Lib/Game.js"></script>
+        <script src="Lib/GameEvent.js"></script>
+        <script src="Lib/GameUI/GameUI.js"></script>
+            <script src="Lib/GameUI/Rectangle.js"></script>
+            <script src="Lib/GameUI/Button.js"></script>
+            <script src="Lib/GameUI/Ellipse.js"></script>
+            <script src="Lib/GameUI/ImageRect.js"></script>
+            <script src="Lib/GameUI/InputText.js"></script>
+            <script src="Lib/GameUI/StackPanel.js"></script>
+            <script src="Lib/GameUI/TextBlock.js"></script>
+            <script src="Lib/GameUI/Output.js"></script>
+        <script src="Lib/GameObject.js"></script>
+        <script src="Lib/GameBehavior.js"></script>
+        <script src="Lib/GameAudio/GameAudio.js"></script>
+            <script src="Lib/GameAudio/AudioBase.js"></script>
+            <script src="Lib/GameAudio/Music.js"></script>
+            <script src="Lib/GameAudio/Sound.js"></script>
+            <script src="Lib/GameAudio/SoundTrack.js"></script>
+
+        <!-- ================== Custom scripts ============================-->
+        <!-- Behavior Scripts -->
+        <script src="Assets/GameBehaviors/_General/AudioEffect.js"></script>
+        <script src="Assets/GameBehaviors/_General/Input.js"></script>
+        <script src="Assets/GameBehaviors/_General/Score.js"></script>
+        <script src="Assets/GameBehaviors/ARWorld/ARWorld.js"></script>
+        
+        <!-- Scenes -->
+        <script src="Assets/GameScenes/MainScene.js"></script>
+
+        <!-- UI -->
+        <!-- Common -->
+        <script src="Assets/GameUIs/Common/SimpleMenu.js"></script>
+        <script src="Assets/GameUIs/Common/ButtonWithText.js"></script>
+        <!-- Main Menu -->
+        <script src="Assets/GameUIs/MainMenu/MainMenuButton.js"></script>
+        <script src="Assets/GameUIs/MainMenu/MainMenu.js"></script>
+        <script src="Assets/GameUIs/MainMenu/SoundOff.js"></script>
+        <!-- Main Menu -->
+        <script src="Assets/GameUIs/HomeMenu/HomeMenu.js"></script>
+        <script src="Assets/GameUIs/MainUI.js"></script>
+        <!-- HUD -->
+        <script src="Assets/GameUIs/HUD/CounterHUD.js"></script>
+        <script src="Assets/GameUIs/HUD/HUDPanel.js"></script>
+    <!-- STEPHEN_END -->
+
+    <style>
+        html, body 
+        {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'MainFont';
+        }
+
+        #Stephen_Game_Canvas 
+        {
+            width   : 100%;
+            height  : 100%;
+            touch-action: none;
+        }
+
+        @font-face 
+        { 
+            font-family: 'MainFont';
+            src: url('Assets/Textures/super_shooter_font.ttf') format('truetype'); 
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Game Body -->
+    <canvas id="Stephen_Game_Canvas" touch-action="none"></canvas>
+    <script>
+        window.onload = function()
+        {
+            //Game.run([UI class name], [level class name], [model filename]);
+            Game.run(MainUI, MainScene); 
+        };
+    </script>
+</body>
+</html>

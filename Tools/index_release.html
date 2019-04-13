@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+     
+    <script> var FBInstant; </script>
+    <script src="https://connect.facebook.com/en_US/fbinstant.6.2.js"></script>
+    <script src="./Assets/Code/All.min.js"></script>
+
+    <style>
+        html, body {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #Stephen_Game_Canvas 
+        {
+            width   : 100%;
+            height  : 100%;
+            touch-action: none;
+        }
+        
+        @font-face 
+        { 
+            font-family: 'MainFont';
+            src: url('./Assets/Textures/super_shooter_font.ttf') format('truetype'); 
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Game Body -->
+    <canvas id="Stephen_Game_Canvas" touch-action="none"></canvas>
+    <script>
+         window.onload = function()
+        {
+            //Game.run([UI class name], [level class name], [model filename]);
+            Game.run(MainUI, MainScene, "AllModels", "SuperShooter", "released"); 
+        };
+    </script>
+</body>
+</html>
